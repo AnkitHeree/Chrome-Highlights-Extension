@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 360px;
+  max-height: 520px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #1e1e1e;
+  color: #fff;
+  gap: 8px;
+}
+
+header h1 {
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.header-actions button {
+  background: transparent;
+  border: 1px solid #555;
+  color: #ccc;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-actions button:hover {
+  background: #333;
+  color: #fff;
+}
+
+#clear-all:hover {
+  border-color: #e53935;
+  color: #ff8a80;
+}
+
+.status {
+  padding: 10px 14px;
+  color: #666;
+  font-size: 12px;
+}
+
+.highlight-list {
+  list-style: none;
+  overflow-y: auto;
+  flex: 1;
+  padding: 0 0 8px;
+}
+
+.highlight-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: default;
+}
+
+.highlight-list li:hover {
+  background: #f0f0f0;
+}
+
+.color-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hl-text {
+  flex: 1;
+  line-height: 1.35;
+  word-break: break-word;
+  color: #222;
+}
+
+.hl-meta {
+  font-size: 11px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  color: #e53935;
+}
+
+footer {
+  padding: 8px 14px 12px;
+  border-top: 1px solid #eee;
+  color: #888;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.empty {
+  padding: 24px 14px;
+  text-align: center;
+  color: #999;
+  line-height: 1.5;
+}

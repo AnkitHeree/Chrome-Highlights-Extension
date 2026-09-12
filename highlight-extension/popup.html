@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Highlighter</title>
+  <link rel="stylesheet" href="styles/popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Highlights</h1>
+    <div class="header-actions">
+      <button id="export-btn" title="Export highlights on this page as JSON">Export</button>
+      <button id="import-btn" title="Import highlights from JSON file">Import</button>
+      <button id="clear-all" title="Remove all highlights on this page">Clear</button>
+    </div>
+  </header>
+
+  <div id="status" class="status">Loading…</div>
+
+  <ul id="list" class="highlight-list"></ul>
+
+  <footer>
+    <small>
+      Alt+Click highlight to remove · 
+      Shortcuts: Alt+Shift+Y / G / B · Alt+Shift+R
+    </small>
+  </footer>
+
+  <input type="file" id="import-file" accept=".json,application/json" hidden />
+
+  <script src="popup.js"></script>
+</body>
+</html>
